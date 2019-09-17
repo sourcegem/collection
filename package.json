@@ -1,0 +1,46 @@
+{
+  "name": "@sourcegem/collection",
+  "version": "1.0.0",
+  "description": "An easy-to-use wrapper for arrays of data",
+  "main": "dist/collection/index.js",
+  "scripts": {
+    "build": "tsc --declaration && webpack --mode development && webpack --mode production",
+    "watch": "tsc --watch",
+    "clean-build": "rimraf ./dist && tsc --declaration && webpack --mode development && webpack --mode production",
+    "test": "mocha --require ts-node/register tests/**/*.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sourcegem/collection.git"
+  },
+  "keywords": [
+    "js",
+    "node",
+    "typescript",
+    "collection",
+    "array",
+    "data",
+    "utility"
+  ],
+  "author": "Matthieu 'Raisenku' Arques <raisenku@sourcegem.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sourcegem/collection/issues"
+  },
+  "homepage": "https://github.com/sourcegem/collection#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.2",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "rimraf": "^3.0.0",
+    "ts-loader": "^6.1.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}
